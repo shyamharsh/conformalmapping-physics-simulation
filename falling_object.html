@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Object with Air Resistance</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7); /* Slightly darker for better contrast */
+            color: white;
+            padding: 15px; /* More padding */
+            border-radius: 8px; /* Softer corners */
+            font-family: sans-serif;
+            font-size: 14px;
+            z-index: 10;
+            max-width: 250px; /* Limit width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+        }
+        #controls h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #add8e6; /* Light blue for headings */
+        }
+        #controls label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #e0e0e0; /* Lighter text */
+        }
+        #controls input[type="range"], #controls select, #controls button {
+            width: calc(100% - 10px); /* Adjust width */
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #555;
+            background-color: #333;
+            color: white;
+        }
+        #controls input[type="checkbox"] {
+            width: auto; /* Checkbox default width */
+            margin-right: 5px;
+        }
+        #controls span {
+            display: inline-block;
+            min-width: 30px; /* Align values */
+            text-align: right;
+            margin-left: 5px;
+        }
+        #controls button {
+            background-color: #007bff; /* Blue button */
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        #controls button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <!-- This link is commented out for now as there's no 'hub' yet.
+             Uncomment and change href to 'index.html' if you introduce a hub later. -->
+         <a href="index.html" class="nav-button">&larr; Back to Hub</a> 
+        <span class="navbar-title">Falling Object Simulation</span>
+    </nav>
+    <div id="controls">
+        <h3>Object Properties</h3>
+        <label for="mass">Mass (kg):</label>
+        <input type="range" id="mass" min="0.1" max="10" value="1.0" step="0.1">
+        <span id="massValue">1.0</span>
+
+        <label for="size">Size (m):</label>
+        <input type="range" id="size" min="0.1" max="2.0" value="0.5" step="0.05">
+        <span id="sizeValue">0.50</span>
+
+        <label for="initialHeight">Initial Height (m):</label>
+        <input type="range" id="initialHeight" min="1" max="20" value="5" step="0.5">
+        <span id="initialHeightValue">5.0</span>
+
+        <label for="initialVelocityX">Initial Vel X (m/s):</label>
+        <input type="range" id="initialVelocityX" min="-5" max="5" value="0" step="0.1">
+        <span id="initialVelocityXValue">0.0</span>
+
+        <label for="initialVelocityZ">Initial Vel Z (m/s):</label>
+        <input type="range" id="initialVelocityZ" min="-5" max="5" value="0" step="0.1">
+        <span id="initialVelocityZValue">0.0</span>
+
+        <label for="shape">Shape:</label>
+        <select id="shape">
+            <option value="sphere">Sphere</option>
+            <option value="cube">Cube</option>
+        </select>
+
+        <label>
+            <input type="checkbox" id="airResistance" checked> Use Air Resistance
+        </label>
+        <label>
+            <input type="checkbox" id="verletIntegration"> Use Verlet Integration
+        </label>
+
+        <button id="resetButton">Reset Object</button>
+    </div>
+    <script type="module" src="./src/falling_object_simulation.js"></script>
+</body>
+</html>

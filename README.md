@@ -4,6 +4,23 @@
 
 This project is a collection of interactive physics and mathematical simulations built using **Three.js** and **JSXGraph**. It serves as a practical training ground for visualizing scientific concepts and implementing numerical methods in a web environment.
 
+
+## Built With
+
+[![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
+[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![JSXGraph](https://img.shields.io/badge/JSXGraph-00a400?style=for-the-badge&logo=jsxgraph&logoColor=white)](https://jsxgraph.org/)
+[![dat.GUI](https://img.shields.io/badge/dat.GUI-white?style=for-the-badge)](https://github.com/dataarts/dat.gui)
+[![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?style=for-the-badge&logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)
+
+This project uses the following core technologies and libraries:
+
+* **Three.js**: A powerful 3D library for creating and animating 3D graphics.
+* **Vite**: A fast and lightweight build tool for modern web projects.
+* **JSXGraph**: A dynamic geometry software for interactive visualizations of mathematical plots.
+* **dat.GUI**: A lightweight graphical user interface library for JavaScript.
+* **Chart.js**: A flexible library for creating interactive charts and graphs.
+
 ## Project Structure
 
 The project is structured to separate different simulations into their own files.

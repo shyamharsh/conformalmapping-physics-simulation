@@ -10,7 +10,9 @@ export default defineConfig({
         decay: 'decay.html',
         complex_z: 'complex_z.html',
         complex_z2: 'complex_z2.html',
-        complex_z3: 'complex_z3.html'
+        complex_z3: 'complex_z3.html',
+        falling_object: 'falling_object.html',
+        pendulum: 'pendulum.html',
       },
     },
   },

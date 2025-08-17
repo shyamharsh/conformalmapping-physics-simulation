@@ -59,11 +59,16 @@ This repository includes several distinct simulations, each demonstrating a diff
 Located in `complex_z.js`, `complex_z2.js`, and `complex_z3.js`. These files use **JSXGraph** to plot the transformation of a unit circle under different complex functions. This is a great way to visualize how functions map the complex plane.
 
 * **`f(z) = z`**: Plots the identity transformation.
+  ![Complex_z visual overview](assets/complex_z_plot.png)
 * **`f(z) = z + z²/2`**: Distorts the circle into a cardioid-like shape.
+  ![Complex_z2 visual overview](assets/complex_z2_plot.png)
 * **`f(z) = z + z³/3`**: Distorts the circle into a three-lobed shape.
+  ![Complex_z3 visual overview](assets/complex_z3_plot.png)
 
 ### 2. Radioactive Decay Simulation
 Located in `decay.js`. This simulation uses **Three.js** to model the random decay of particles. It also integrates **Chart.js** to display the decay curve in real time, demonstrating the exponential nature of radioactive decay.
+
+![Radioactive Decay Simulation](assets/radioactive_decay_sim.gif)
 
 * **Controls**: Adjust the decay constant (λ) and initial particle count.
 * **Visualization**: Particles fade away as they decay.
@@ -72,12 +77,16 @@ Located in `decay.js`. This simulation uses **Three.js** to model the random dec
 ### 3. Falling Object Simulation
 Located in `falling_object.js`. This simulation models the physics of a falling object with interactive controls. It's a great demonstration of applying numerical integration methods in a 3D environment.
 
+![Falling Object Simulation](assets/falling_object_sim.gif)
+
 * **Physics**: Includes gravity, air resistance (drag), and wind force.
 * **Integration**: Allows switching between **Euler integration** and **Verlet integration** to compare their stability and accuracy.
 * **Interactivity**: Change the object's mass, size, initial velocity, and shape (sphere or cube) to see the effects.
 
 ### 4. Simple Pendulum Simulation
 Located in `pendulum.js`. This simulation visualizes the simple harmonic motion of a pendulum in 3D using **Three.js**.
+
+![Pendulum Simulation](assets/pendulum_sim.gif)
 
 * **Controls**: Adjust the pendulum's length, gravity, and initial angle.
 * **Physics**: The motion is calculated using a standard pendulum equation with Euler integration.

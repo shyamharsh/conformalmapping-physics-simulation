@@ -85,3 +85,50 @@ canvas {
         height: calc(100vh - 100px); /* Adjust height for stacked navbar */
     }
 }
+/* Styles for the visualization containers */
+.visualization-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    justify-content: center; /* Center the boards horizontally */
+    align-items: flex-start; /* Align them at the top */
+    flex-wrap: wrap; /* Allow boards to stack on smaller screens */
+    padding: 20px;
+    gap: 20px; /* Space between the boards */
+}
+
+/* Styles for the individual JSXGraph boards (the divs) */
+.jxgbox-conformal {
+    /* Set a specific width for each board. 48% allows for a 2% gap if flex-wrap is not active. */
+    width: 48%;
+    /* Max width to prevent them from becoming too large on very wide screens */
+    max-width: 500px;
+    /* Fixed height for consistency */
+    height: 400px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    background-color: white; /* Ensure background is white */
+    margin-bottom: 20px; /* Space when stacked on smaller screens */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 900px) {
+    .visualization-container {
+        flex-direction: column; /* Stack boards vertically */
+        align-items: center; /* Center them when stacked */
+    }
+    .jxgbox-conformal {
+        width: 90%; /* Make them wider when stacked */
+        max-width: none; /* No max-width when stacked */
+    }
+}
+
+/* Ensure default JSXGraph styles are present if not loading from CDN */
+/* If you are loading jsxgraph.css from CDN, this section is less critical,
+   but good to know for troubleshooting specific element rendering */
+.jxgbox .jxg-point {
+    /* Default point size and shape. JSXGraph's point properties should override this */
+}
+
+.jxgbox {
+    /* If you have a generic .jxgbox rule, ensure it doesn't conflict with .jxgbox-conformal */
+    /* For instance, if .jxgbox sets width: 100%, it might break the side-by-side layout. */
+}

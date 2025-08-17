@@ -7,7 +7,7 @@ This project is a collection of interactive physics and mathematical simulations
 ## Project Structure
 
 The project is structured to separate different simulations into their own files.
-(```)
+```
 
 /threejspractical-training
 ├── dist/                # Output of the build process
@@ -33,7 +33,7 @@ The project is structured to separate different simulations into their own files
 ├── package.json         # Project metadata and scripts
 └── vite.config.js       # Vite configuration file
 
-(```)
+```
 ## Features
 
 This repository includes several distinct simulations, each demonstrating a different concept.

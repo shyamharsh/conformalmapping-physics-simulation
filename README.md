@@ -86,6 +86,8 @@ Located in `pendulum.js`. This simulation visualizes the simple harmonic motion 
 ### 5. Standing Waves on a String
 Located in `main.js`. This simulation visualizes multiple standing waves. It's a great tool for understanding wave superposition and harmonics.
 
+![Standing Waves Simulation](assets/standing_wave_sim.gif)
+
 * **Visualization**: Multiple strings are animated with sine waves.
 * **Controls**: Adjust the amplitude, frequency, and number of harmonics for each string in real time using a **dat.gui** control panel.
 * **Physics**: The wave motion is calculated using the standing wave equation $y(x, t) = A \sin(kx) \cos(\omega t)$.

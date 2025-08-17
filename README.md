@@ -27,18 +27,31 @@ The project is structured to separate different simulations into their own files
 ```
 
 /threejspractical-training
+├── assets/
+│   ├── complex_z_plot.png
+│   ├── complex_z2_plot.png
+│   ├── complex_z3_plot.png
+│   ├── falling_object_sim.gif
+│   ├── pendulum_sim.gif
+│   ├── radioactive_decay_sim.gif
+│   └── standing_wave_sim.gif
 ├── dist/                # Output of the build process
 ├── node_modules/        # Project dependencies
-├── public/              # Static assets
+├── public/
+│   ├── front-page-screenshot.png
+│   └── vite.svg
 ├── src/
-│   ├── textures/        # Image textures for Three.js
+│   ├── textures/
+│   │   ├── earth_texture.jpg
+│   │   └── metal_texture.jpg
 │   ├── complex_z.js     # Complex function visualization (f(z) = z)
 │   ├── complex_z2.js    # Complex function visualization (f(z) = z + z²/2)
 │   ├── complex_z3.js    # Complex function visualization (f(z) = z + z³/3)
 │   ├── decay.js         # Radioactive decay simulation
-│   ├── falling_object.js # Falling object physics simulation
+│   ├── falling_object_simulation.js # Falling object physics simulation
 │   ├── main.js          # Standing waves on a string visualization
-│   └── pendulum.js      # Simple pendulum simulation
+│   ├── pendulum.js      # Simple pendulum simulation
+│   └── style.css
 ├── .gitignore           # Git ignore file
 ├── complex_z.html       # HTML for complex_z.js
 ├── complex_z2.html      # HTML for complex_z2.js
@@ -48,7 +61,10 @@ The project is structured to separate different simulations into their own files
 ├── index.html           # Main entry point (can be a directory listing or a showcase)
 ├── package-lock.json    # Dependency tree
 ├── package.json         # Project metadata and scripts
+├── pendulum.html
+├── standing.html
 └── vite.config.js       # Vite configuration file
+
 
 ```
 ## Features

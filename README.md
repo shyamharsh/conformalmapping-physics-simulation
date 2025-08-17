@@ -78,7 +78,7 @@ To run this project, you need to have Node.js and npm (or yarn) installed.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/threejspractical-training.git](https://github.com/your-username/threejspractical-training.git)
+    git clone [https://github.com/shyamharsh/conformalmapping-physics-simulation.git](https://github.com/shyamharsh/conformalmapping-physics-simulation.git)
     cd threejspractical-training
     ```
 
